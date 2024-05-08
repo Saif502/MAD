@@ -13,6 +13,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
+        backgroundColor: Colors.blueGrey,
+      ),
+      body: Center(
+        child: Text('home body'),
       ),
     );
   }

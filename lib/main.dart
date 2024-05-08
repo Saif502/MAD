@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/home.dart';
 import 'package:my_app/images.dart';
 import 'package:my_app/login.dart';
+import 'package:my_app/main_screen.dart';
+import 'package:my_app/search.dart';
+import 'package:my_app/settings.dart';
 import 'package:my_app/signup.dart';
 
 void main() {
@@ -22,12 +24,15 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ImagesAndButton(),
+        // home: const ImagesAndButton(),
         initialRoute: '/signup',
         routes: {
           '/login': (BuildContext context) => const LoginScreen(),
           '/signup': (BuildContext context) => const SignupScreen(),
-          '/home': (BuildContext context) => const HomeScreen(),
+          '/home': (BuildContext context) => const MainScreen(),
+          '/settings': (BuildContext context) => const SettingsScreen(),
+          '/search': (BuildContext context) => const SearchScreen(),
+          '/images': (BuildContext context) => const ImagesAndButton(),
         });
   }
 }
